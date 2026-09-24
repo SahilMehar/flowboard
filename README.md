@@ -2,7 +2,9 @@
 
 A small project board for one team. You get a sidebar tree (workspace, space, folder, list), a kanban board, a list view, and a task drawer. There is no server. Data lives in a Zustand store, loaded from seed fixtures, and saved to `localStorage`.
 
-Try the user switcher in the top right, labeled **Acting as**.
+Try the user switcher in the top right, labeled **Acting as**. Alice sees the whole workspace. Bob loses Marketing and keeps Sprint.
+
+Live preview: [https://flowboard-1-pi.vercel.app/](https://flowboard-1-pi.vercel.app/)
 
 ## Run it
 
@@ -90,7 +92,7 @@ Dragging a card to another column changes its status. Dragging it within a colum
 
 ## What I shipped, and what I left
 
-Shipped: admin tree create / rename / archive, kanban and list, task drawer, drag between columns and inside a column, user switcher, skeletons, empty states, toasts, permission tests, and `localStorage` plus Reset seed.
+Shipped: admin tree create / rename / archive, kanban and list, task drawer, drag between columns and inside a column, user switcher, skeletons, empty states, toasts, permission tests, `localStorage` plus Reset seed, and a Vercel preview.
 
 Left for later: subtasks, search, bulk edit, an activity feed, optimistic drag with rollback, Storybook, and a mobile layout. `parentTaskId` is on the task type and stays `null`. Sidebar items are ordered by `position` when they are created.
 
